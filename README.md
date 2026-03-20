@@ -53,3 +53,7 @@
 * **Encrypted Communication (Level 15-16)**: Ordinary `nc` can't read encrypted data; use `openssl s_client -connect [host]:[port]` to add a "translator" layer.
 * **Bypass Shell Limit (Level 18)**: When `.bashrc` kicks people, follow the command directly after SSH: `ssh user@host 'cat readme'`.
 * **Git Archaeology**: Use `git log -p` to view historical differences, and `git branch -a` to find leaked keys. (Git 考古：查看历史差异与分叉支寻找密钥)
+
+## 🐳 Cloud & DevOps Lab
+- **My First Container**: Successfully deployed and managed an Nginx web server using Docker.
+- **Key Commands Mastered**: `docker run`, `docker ps`, `docker stop`.
