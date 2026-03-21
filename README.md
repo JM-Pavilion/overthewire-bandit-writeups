@@ -54,6 +54,22 @@
 * **Bypass Shell Limit (Level 18)**: When `.bashrc` kicks people, follow the command directly after SSH: `ssh user@host 'cat readme'`.
 * **Git Archaeology**: Use `git log -p` to view historical differences, and `git branch -a` to find leaked keys. (Git 考古：查看历史差异与分叉支寻找密钥)
 
-## 🐳 Cloud & DevOps Lab
-- **My First Container**: Successfully deployed and managed an Nginx web server using Docker.
-- **Key Commands Mastered**: `docker run`, `docker ps`, `docker stop`.
+## 🐳 Cloud & DevOps Lab (云与 DevOps实验室)
+- **My First Container (我的第一个容器)**: Successfully deployed and managed an Nginx web server using Docker.  (使用 Docker 成功部署并管理了Nginx Web服务器)
+- **Key Commands Mastered (掌握关键命令)**: `docker run`, `docker ps`, `docker stop`.
+
+## 🐳 Docker & Cloud Deployment (Docker 与云端部署实战)
+
+* **Custom Image Iteration (自定义镜像迭代):** Containerized my Bandit Cheat Sheet with version control. (将速查表容器化并实现版本迭代管理)
+* **v1.0:** Initial deployment using standard Nginx. (基于标准 Nginx 的初步部署)
+* **v2.0:** Enhanced "Hacker Style" UI with lightweight Alpine base. (采用“黑客风格” UI 及轻量级 Alpine 镜像优化)
+* **DevOps Workflow (DevOps 工作流):** Mastered `Dockerfile` crafting, image tagging, and public hosting on Docker Hub. (掌握了 Dockerfile 编写、镜像标签管理及 Docker Hub 公开托管)
+
+### 🌐 Live Demo (实时演示)
+Run my latest "Hacker Style" cheat sheet with one command:
+(通过以下命令直接运行我最新的“黑客风”速查表：)
+```bash
+docker run -d -p 8888:80 jminng/jm-bandit-web:v2
+
+
+
