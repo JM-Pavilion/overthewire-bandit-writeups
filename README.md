@@ -68,8 +68,19 @@
 ### 🌐 Live Demo (实时演示)
 Run my latest "Hacker Style" cheat sheet with one command:
 (通过以下命令直接运行我最新的“黑客风”速查表：)
-```bash
+```bash```
 docker run -d -p 8888:80 jminng/jm-bandit-web:v2
 
+## 🏗️ Docker Compose & Orchestration (容器编排实战)
+
+* **Infrastructure as Code (基础设施即代码):** Orchestrated a multi-container environment using `docker-compose`. (利用 Docker Compose 实现了多容器环境的一键编排与部署。)
+* **Service Coordination (服务协同):** Successfully deployed a dual-service stack (Web App + Hello Service) with isolated networking. (成功部署了包含 Web 应用和欢迎服务的双机编队，并实现了独立的容器网络连接。)
+* **Resilience (韧性能力):** Demonstrated the ability to troubleshoot network timeouts and pivot to lightweight images. (展现了排查网络超时并快速切换轻量化镜像的实战应对能力。)
+
+### 🚀 One-Click Deployment (一键部署)
+To spin up my full environment, simply run:
+(只需一行命令即可启动我的完整环境：)
+```bash```
+docker-compose up -d
 
 
