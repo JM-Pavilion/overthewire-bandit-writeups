@@ -90,9 +90,15 @@ docker-compose up -d
 * **Storage Reliability (存储可靠性):** Ensured data persistence across container lifecycles, a foundational step toward stateful AI applications. (确保了数据在容器生命周期外的持久化存储，这是迈向有状态 AI 应用的基础。)
 
 ### 🛠️ Lab Structure (实验架构)
-```bash
+```test
 .
 ├── docker-compose.yml  # The Commander (指挥官)
 └── html/               # Persistent Storage (持久化存储层)
     └── index.html      # Live Content (动态内容)
+```
 
+## 🌐 Secure Internal Networking (内部网络安全实战)
+
+* **Service Discovery (服务发现):** Confirmed that containers can communicate using service names (e.g., `ping hello`) instead of static IPs. (验证了容器间可以通过服务名互相发现，彻底告别死板的 IP 配置。)
+* **Network Isolation (网络隔离):** Successfully hidden the `hello` service from the public internet while keeping it accessible to `my-web`. (成功实现了服务的内外隔离：外部无法访问，内部畅通无阻。)
+* **Live API Simulation (动态请求仿真):** Observed dynamic `Request ID` updates through internal `curl` requests, simulating a real-world microservices API environment. (通过内部 curl 请求观察到了动态 ID 更新，模拟了真实的微服务 API 环境。)
