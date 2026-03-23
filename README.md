@@ -83,4 +83,16 @@ To spin up my full environment, simply run:
 ```bash```
 docker-compose up -d
 
+## 💾 Data Persistence & Bind Mounts (数据持久化实战)
+
+* **Bind Mount Implementation (绑定挂载):** Decoupled static assets from the container image using Docker Volumes. (通过数据卷实现了静态资源与容器镜像的分离。)
+* **Hot Reloading (热部署):** Enabled real-time UI updates without rebuilding images, significantly boosting development efficiency. (实现了无需重构镜像的实时 UI 更新，显著提升了开发效率。)
+* **Storage Reliability (存储可靠性):** Ensured data persistence across container lifecycles, a foundational step toward stateful AI applications. (确保了数据在容器生命周期外的持久化存储，这是迈向有状态 AI 应用的基础。)
+
+### 🛠️ Lab Structure (实验架构)
+```bash
+.
+├── docker-compose.yml  # The Commander (指挥官)
+└── html/               # Persistent Storage (持久化存储层)
+    └── index.html      # Live Content (动态内容)
 
