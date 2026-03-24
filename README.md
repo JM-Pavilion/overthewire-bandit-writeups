@@ -109,6 +109,25 @@ docker-compose up -d
 * **Automated Data Extraction:** Successfully captured dynamic `Request ID` from the isolated `hello` service using regex. (利用正则匹配，自动从隔离的 hello 服务中抓取了动态 ID。)
 * **Flexible Environment:** Adapted to network constraints by "side-loading" Python into an existing Alpine-based image. (巧妙利用 Alpine 镜像环境安装 Python，成功绕过 Docker Hub 下载限制。)
 
+## ​📺 Service Monitor Dashboard (服务实时监控面板)
 
+* **Automated Health Monitoring (自动化监控实战):** Implemented a 7x24 Python-based "Sentry" to poll service status every 5 seconds. (编写了基于 Python 的自动化“哨兵”，实现了每 5 秒一次的服务状态轮询。)
+* **Visual Feedback & ANSI Colors (视觉反馈与色彩增强):** Integrated ANSI escape codes to provide immediate visual cues for system health (Green for OK, Red for Error). (集成 ANSI 转义码，通过颜色实时区分系统健康度：绿色代表正常，红色代表故障。)
+* **Persistent Logging (日志持久化):** Synchronized internal container logs to the host machine for post-incident analysis. (将容器内部日志实时同步至宿主机，确保在事故发生后可进行数据追溯。)
+
+## 🛠️ Lab Structure (实验架构)
+```test
+.
+├── docker-compose.yml # The Commander (指挥官)
+├── monitor.log        # Persistent Logs (持久化日志流)
+├── bot.py             # The Sentry & Web Engine (哨兵与网页引擎)
+└── html/              # Static Assets (静态资源层)
+```
+
+## 🚨 Incident Simulation & Recovery (生产事故模拟与自愈)
+
+* ​**Service Downtime Simulation (模拟服务宕机):** Verified the monitor's alerting capability by manually stopping the hello container, observing immediate "Red" error states. (通过手动停止测试容器，验证了监控系统在秒级内触发红色报警的能力。)
+* **Automated Status Recovery (服务状态自愈检测):** Confirmed the probe's ability to automatically resume "Green" status upon service restoration without manual intervention. (确认了探针在服务恢复后，无需人工干预即可自动回归绿色健康状态。)
+* **​Optimized Alpine Tooling (Alpine 镜像环境优化):** Solved package installation bottlenecks by implementing Aliyun mirrors within the container startup command. (通过在启动指令中动态注入阿里云镜像源，解决了 Alpine 环境下依赖安装缓慢的问题。)
 
 
