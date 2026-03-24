@@ -102,3 +102,13 @@ docker-compose up -d
 * **Service Discovery (服务发现):** Confirmed that containers can communicate using service names (e.g., `ping hello`) instead of static IPs. (验证了容器间可以通过服务名互相发现，彻底告别死板的 IP 配置。)
 * **Network Isolation (网络隔离):** Successfully hidden the `hello` service from the public internet while keeping it accessible to `my-web`. (成功实现了服务的内外隔离：外部无法访问，内部畅通无阻。)
 * **Live API Simulation (动态请求仿真):** Observed dynamic `Request ID` updates through internal `curl` requests, simulating a real-world microservices API environment. (通过内部 curl 请求观察到了动态 ID 更新，模拟了真实的微服务 API 环境。)
+
+## 🤖 Automated "Jarvis-Bot" (自动化特工实战)
+
+* **Cross-Container Scripting:** Deployed a Python-based bot within the internal Docker network. (在 Docker 内网部署了 Python 特工脚本。)
+* **Automated Data Extraction:** Successfully captured dynamic `Request ID` from the isolated `hello` service using regex. (利用正则匹配，自动从隔离的 hello 服务中抓取了动态 ID。)
+* **Flexible Environment:** Adapted to network constraints by "side-loading" Python into an existing Alpine-based image. (巧妙利用 Alpine 镜像环境安装 Python，成功绕过 Docker Hub 下载限制。)
+
+
+
+
