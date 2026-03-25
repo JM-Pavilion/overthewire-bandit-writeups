@@ -130,4 +130,16 @@ docker-compose up -d
 * **Automated Status Recovery (服务状态自愈检测):** Confirmed the probe's ability to automatically resume "Green" status upon service restoration without manual intervention. (确认了探针在服务恢复后，无需人工干预即可自动回归绿色健康状态。)
 * **​Optimized Alpine Tooling (Alpine 镜像环境优化):** Solved package installation bottlenecks by implementing Aliyun mirrors within the container startup command. (通过在启动指令中动态注入阿里云镜像源，解决了 Alpine 环境下依赖安装缓慢的问题。)
 
+## 🔧 Version Control & Remote Sync (版本控制与云端同步实战)
+* **​Git Identity Branding (Git 身份标识配置):** Standardized local environment with global user credentials to ensure professional contribution tracking. (标准化本地环境的全局用户凭证，确保所有代码贡献记录的专业追踪。)
+* **​Remote Repository Linking (远程仓库关联):** Successfully established a secure bridge between the local dev environment and GitHub via remote add origin. (通过远程仓库关联指令，成功在本地开发环境与 GitHub 之间建立了安全的连接桥梁。)
+* **Clean History Management (整洁历史管理):** Mastered the use of git commit --amend and --force push to maintain a high-quality, streamlined project timeline. (掌握了提交修正与强制推送技术，确保了项目时间线的简洁与高质量。)
+
+## 🔖 Versioning & Release Management (版本发布管理实战)
+* **Milestone Tagging (里程碑标签):** Leveraged Git Tags to create v1.0.0, marking the first stable deployment of the monitoring system. (利用 Git 标签创建了 v1.0.0 版本，标记了监控系统的首次稳定部署。)
+* **Release Documentation (发布文档撰写):** Published formal release notes on GitHub to track feature updates and system stability. (在 GitHub 上发布了正式的 Release Notes，用于追踪功能更新与系统稳定性。)
+
+
+
+
 
