@@ -144,5 +144,14 @@ docker-compose up -d
 * **​Cloud Execution Environment (云端运行环境):** Configured temporary Ubuntu runners to ensure code consistency across different environments. (配置了临时的 Ubuntu 运行节点，确保代码在不同环境下的一致性。)
 * **Early Bug Detection (早期错误发现):** Automated the py_compile process to catch syntax errors before manual deployment. (通过自动化编译检查，在人工部署前拦截语法错误。)
 
+## ​🐳 Containerization & Port Mapping (容器化与端口映射实战)
+* **Dockerfile Engineering:** Created a custom Python-slim image to encapsulate the monitoring environment. (创建了自定义 Python 轻量化镜像，封装了完整的监控环境。)
+* **Port Forwarding Mastery:** Successfully implemented port mapping (8085:80) to demonstrate network isolation between host and container. (成功实现端口转发，演示了宿主机与容器间的网络隔离。)
+* **Local Runtime Validation:** Verified the integrity of the built image by deploying a standalone container instance. (通过部署独立的容器实例，验证了构建镜像的完整性。)
+
+
+
+
+
 
 
