@@ -149,7 +149,27 @@ docker-compose up -d
 * **Port Forwarding Mastery:** Successfully implemented port mapping (8085:80) to demonstrate network isolation between host and container. (成功实现端口转发，演示了宿主机与容器间的网络隔离。)
 * **Local Runtime Validation:** Verified the integrity of the built image by deploying a standalone container instance. (通过部署独立的容器实例，验证了构建镜像的完整性。)
 
+## 🚀 Network Monitor v2.0
 
+This is a full-network service monitoring system based on Python Flask and Docker. It can monitor the operation status of internal Docker network services and external Internet factories at the same time.    (这是一个基于 Python Flask 和 Docker 的全网服务监控系统。它能够同时监控内部 Docker 网络服务以及外部互联网大厂的运行状态。)
+
+### ✨ 功能特性
+- **Real-time monitoring(实时监控)**：Automatically check the response status of the target service every second.  (每秒自动检查目标服务的响应状态。)
+- **Multi-dimensional detection(多维度探测):** Support internal container services (such as `hello`) and external websites (such as `Baidu`, `GitHub`).  (支持内部容器服务（如 `hello`）和外部网站（如 `Baidu`, `GitHub`）。)
+- **Container deployment(容器化部署):** One-click start through Docker Compose, environment zero configuration.  (通过 Docker Compose 一键启动，环境零配置。)
+
+### 🛠️ Technical stack (技术栈)
+- **Language**: Python 3.9
+- **Framework**: Flask (Web 界面展示)
+- **Library**: Requests (网络请求), Threading (多线程并行监控)
+- **Infrastructure**: Docker, Docker Compose, GitHub Actions (CI)
+
+### 🚀 Quick start (快速启动)
+1. Make sure that Docker and Docker Compose are installed.  (确保已安装 Docker 和 Docker Compose。)
+2. **Run in the root directory(在根目录运行):**
+   ```bash
+   docker-compose up --build -d
+   ```
 
 
 
