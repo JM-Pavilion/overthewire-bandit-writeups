@@ -139,7 +139,10 @@ docker-compose up -d
 * **Milestone Tagging (里程碑标签):** Leveraged Git Tags to create v1.0.0, marking the first stable deployment of the monitoring system. (利用 Git 标签创建了 v1.0.0 版本，标记了监控系统的首次稳定部署。)
 * **Release Documentation (发布文档撰写):** Published formal release notes on GitHub to track feature updates and system stability. (在 GitHub 上发布了正式的 Release Notes，用于追踪功能更新与系统稳定性。)
 
-
+## ​🤖 CI/CD Automation (持续集成自动化实战)
+* **GitHub Actions Integration (GitHub Actions 集成):** Implemented an automated CI pipeline to perform syntax validation on every push. (实现了自动化 CI 流水线，在每次代码推送时自动进行语法校验。)
+* **​Cloud Execution Environment (云端运行环境):** Configured temporary Ubuntu runners to ensure code consistency across different environments. (配置了临时的 Ubuntu 运行节点，确保代码在不同环境下的一致性。)
+* **Early Bug Detection (早期错误发现):** Automated the py_compile process to catch syntax errors before manual deployment. (通过自动化编译检查，在人工部署前拦截语法错误。)
 
 
 
