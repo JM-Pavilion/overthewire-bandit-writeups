@@ -153,7 +153,7 @@ docker-compose up -d
 
 This is a full-network service monitoring system based on Python Flask and Docker. It can monitor the operation status of internal Docker network services and external Internet factories at the same time.    (这是一个基于 Python Flask 和 Docker 的全网服务监控系统。它能够同时监控内部 Docker 网络服务以及外部互联网大厂的运行状态。)
 
-### ✨ 功能特性
+### ✨ Functional characteristics(功能特性)
 - **Real-time monitoring(实时监控)**：Automatically check the response status of the target service every second.  (每秒自动检查目标服务的响应状态。)
 - **Multi-dimensional detection(多维度探测):** Support internal container services (such as `hello`) and external websites (such as `Baidu`, `GitHub`).  (支持内部容器服务（如 `hello`）和外部网站（如 `Baidu`, `GitHub`）。)
 - **Container deployment(容器化部署):** One-click start through Docker Compose, environment zero configuration.  (通过 Docker Compose 一键启动，环境零配置。)
@@ -170,6 +170,20 @@ This is a full-network service monitoring system based on Python Flask and Docke
    ```bash
    docker-compose up --build -d
    ```
+
+
+## 🛡️ Quality Assurance (质量保证)
+
+### **Automated Testing & CI (自动化测试与持续集成)**
+This project uses **GitHub Actions** to implement a robust CI pipeline. Every time code is pushed, the system automatically:(本项目使用 **GitHub Actions** 实现了健壮的 CI 流水线。每当代码推送时，系统会自动：)
+- Sets up a Python 3.9 environment.(搭建 Python 3.9 环境。)
+- Installs all necessary dependencies (`flask`, `requests`, `pytest`).(安装所有必要依赖)
+- Runs automated test suites to verify URL formats and service integrity.(运行自动化测试套件，校验 URL 格式及服务完整性。)
+- **Goal(目标)**: Prevent human errors (like malformed URLs) from reaching production.(防止人为错误（如错误的 URL 格式）进入生产环境。)
+
+### **Test Coverage (测试覆盖范围)**
+- **URL Validation(URL 校验)**: Ensures monitoring targets start with `http` and do not contain trailing dots.(确保监控目标以 `http` 开头，且末尾没有多余的点。)
+- **Service Integrity(服务完整性)**: Verifies that the monitoring target list is not empty.(验证监控目标列表不为空。)
 
 
 
