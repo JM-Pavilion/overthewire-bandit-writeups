@@ -285,7 +285,12 @@ The Terraform configuration includes(Terraform 配置包含以下内容):
 * **Network Troubleshooting(网络链路优化)**: Resolved port mismatch issues (Host 5001 to Container 10000) and updated Flask binding from `127.0.0.1` to `0.0.0.0` for external accessibility.(解决了容器内外端口映射不匹配（10000 vs 5001）以及 Flask 在 Docker 内的监听地址问题（从 127.0.0.1 转向 0.0.0.0）。)
 * **Multi-device Verification(多端验证)**: Verified accessibility across both desktop and mobile devices within the same local network.(实现了同一局域网下移动端与 PC 端的同步访问验证。)
 
+## 🤖 Step 2: Automated CI Pipeline with GitHub Actions(使用 GitHub Actions 构建自动化 CI 流水线) (2026-04-10)
 
+### Successfully implemented a fully automated Continuous Integration (CI) workflow(今天成功打通了从“代码提交”到“镜像入库”的全自动化流程 (CI)):
+* **Security Management(安全管理)**: Configured Docker Hub credentials in GitHub Secrets using Personal Access Tokens (PAT) instead of plain-text passwords, adhering to the principle of least privilege.(在 GitHub Secrets 中配置了 Docker Hub 凭据，通过 Personal Access Token (PAT) 代替明文密码，遵循最小权限原则。)
+* **Pipeline Automation(流水线自动化)**: Created `.github/workflows/docker-image.yml` to trigger automatic builds whenever changes are pushed to the `main` branch.(编写了 `.github/workflows/docker-image.yml`，实现了基于 `main` 分支推送触发的自动构建。)
+* **Image Registry(镜像托管)**: Successfully pushed the Docker image to a cloud registry (Docker Hub), eliminating local environment dependencies and paving the way for Continuous Deployment (CD) on AWS.(成功将打包好的 Docker 镜像推送到云端仓库 (Docker Hub)，消除了本地环境依赖，为下一步的云端部署 (CD) 打下坚实基础。)
 
 
 
